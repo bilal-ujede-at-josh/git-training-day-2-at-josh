@@ -1,0 +1,21 @@
+git push --force is a command that allows you to overwrite the remote repository with your local commits, even if the remote repository has new commits that you don't have locally. This can be dangerous, because it can permanently destroy work that has been done on the remote repository.
+
+git push --force-with-lease is similar to git push --force, but it provides an extra layer of protection. It will only allow you to overwrite the remote repository if the current branch's upstream matches the state of the remote repository. This means that if someone else has pushed new commits to the remote repository since you last fetched, git push --force-with-lease will fail, preventing you from overwriting their work.
+
+Here's an example of using git push --force:
+
+# Make some commits to your local repository
+git commit -am "Add new feature"
+git commit -am "Fix bug"
+
+# Push your local commits to the remote repository, overwriting any new work that has been done on the remote repository
+git push --force
+Here's an example of using git push --force-with-lease:
+
+# Make some commits to your local repository
+git commit -am "Add new feature"
+git commit -am "Fix bug"
+
+# Push your local commits to the remote repository, but only if the current branch's upstream matches the state of the remote repository
+git push --force-with-lease
+In general, you should avoid using git push --force unless you are absolutely sure that it is safe to do so. git push --force-with-lease provides a safer alternative that can help prevent accidental data loss.
