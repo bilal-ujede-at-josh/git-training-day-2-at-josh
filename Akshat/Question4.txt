@@ -1,0 +1,9 @@
+To delete a single commit, you can use the git revert command and specify the commit hash. This will create a new commit that undoes the changes made in the previous commit.
+
+To delete multiple commits, you can use the git rebase command and specify the range of commits that you want to delete. For example, to delete the last 2 commits, you can use the following command:
+
+Copy code
+git rebase -i HEAD~2
+This will open a text editor where you can specify which commits to keep and which to delete. To delete a commit, change the word "pick" to "drop" for that commit. Save the file and exit the editor. Git will then apply the rebase operation and delete the specified commits.
+
+Keep in mind that these actions are not permanent and can be undone. If you want to permanently delete commits, you will need to force push to the repository. This will overwrite the existing history and permanently delete the commits. Be very careful when using this option, as it can cause conflicts if other people have pushed commits to the same branch.

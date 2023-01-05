@@ -1,0 +1,8 @@
+It is possible to set multiple remote repositories for the same project in Git. This can be useful in a variety of situations, such as:
+
+You are working on a project with other developers and want to push your changes to a remote repository that is shared among all the developers.
+You want to create a backup of your repository by pushing to a secondary remote repository.
+You are working on a project that has multiple upstream repositories and you want to sync your local repository with all of them.
+
+
+git remote add upstream <URL of remote repository>

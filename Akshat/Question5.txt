@@ -1,0 +1,14 @@
+In Git, the --force flag allows you to override the local repository's changes and push the new changes to the remote repository. This can be useful if you need to discard commits made to the local repository and replace them with new commits. However, --force can also be dangerous because it can overwrite other people's work.
+
+The --force-with-lease flag is a safer alternative to --force. It works by checking that the local copy of the branch being pushed matches the upstream version of the branch. If the upstream version has changed since the local copy was last updated, --force-with-lease will reject the push and prevent you from overwriting other people's work.
+
+Here is an example of how to use --force-with-lease:
+
+Copy code
+git push origin my-branch --force-with-lease
+In this example, origin is the remote repository, and my-branch is the name of the branch being pushed. --force-with-lease ensures that the push will only succeed if the local copy of my-branch is up to date with the upstream version of my-branch.
+
+--force-with-lease is typically used when you are working on a team and want to ensure that you don't overwrite other people
+
+
+

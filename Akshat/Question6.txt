@@ -1,0 +1,13 @@
+To unstage changes from the staged area in Git, use the git reset command followed by the file name. For example:
+
+Copy code
+git reset <filename>
+This will unstage the file and remove it from the list of staged changes.
+
+Alternatively, you can use the git restore command, which also allows you to unstage changes. The git restore command has more options and is more flexible, but it can also be more complex to use. To unstage changes using git restore, use the --staged option and specify the file name:
+
+Copy code
+git restore --staged <filename>
+This will unstage the file and leave the file's contents unchanged in your working directory.
+
+Keep in mind that unstage a change does not discard the change itself. It only removes the change from the staged area, so that it is not included in the next commit. To discard the change and revert the file to its previous state, you will need to use a different command such as git checkout or git revert.

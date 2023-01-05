@@ -1,0 +1,20 @@
+To combine two commits into one commit in git, you can use the following steps:
+
+Check out the branch that contains the commits you want to merge.
+
+Use the git rebase command to move the branch that contains C2 and C3 to a new commit that contains the changes from both C2 and C3. For example, if C2 and C3 are on branch B, you would run the following command:
+
+Copy code
+git rebase -i HEAD~4
+This command will open a text editor with a list of the last four commits on your branch. Replace the line that says "pick" for C2 and C3 with "squash" or "fixup". Save and close the editor.
+
+Git will apply the changes from C2 and C3 and combine them into a single commit. It will also give you the opportunity to edit the commit message to describe the changes made in the combined commit.
+
+Once you have finished editing the commit message, git will create a new commit that contains the changes from C2 and C3. This new commit will be placed on top of C1, and C4 will be placed on top of the new commit.
+
+If you want to push these changes to a remote repository, you will need to use the git push command with the --force option to overwrite the previous commits.
+
+git push --force
+Keep in mind that using the --force option can cause issues if other people have based work on the commits you are overwriting. It is generally a good idea to avoid using --force unless you are sure that you want to overwrite the previous commits.
+
+THis is the endline and will mergr c2 and c3
