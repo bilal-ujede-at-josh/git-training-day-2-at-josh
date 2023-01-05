@@ -1,0 +1,3 @@
+To combine two commits into one commit in Git, you can use the "rebase" command with the "--interactive" option. This will open an editor where you can specify which commits to combine.
+steps 
+1.Check out the branch that you want to modify-git checkout my-branch
