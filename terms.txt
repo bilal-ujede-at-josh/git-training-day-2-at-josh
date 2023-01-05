@@ -1,0 +1,3 @@
+Origin - Default remote name
+Main - Default branch name
+Master - Default local branch
