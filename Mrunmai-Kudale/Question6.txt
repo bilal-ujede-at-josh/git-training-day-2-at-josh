@@ -1,0 +1,13 @@
+Q6. How to unstage changes from the staged area. write command for it.
+
+The easiest way to unstage files on Git is to use the “git reset” command and specify the file you want
+to unstage.
+git reset <commit> -- <path>
+
+To unstage all files, use the “git reset” command without specifying any files or paths.
+$ git reset
+
+If you want to unstage your last commit, you can the “HEAD” notation in order to revert it easily.
+$ git reset --soft HEAD~1
+
+git restore --staged filename
