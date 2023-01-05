@@ -12,3 +12,5 @@ squash def1234 My second commit
 
 Update the commit message as needed, then save and close the editor. Git will finish the rebase and combine the two commits into one.
 It's a good idea to make a backup of your branch before performing an interactive rebase, in case something goes wrong. You can use the "git branch" command to create a new branch from your current branch, like this:
+
+git branch backup-branch
