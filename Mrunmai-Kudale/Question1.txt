@@ -1,0 +1,18 @@
+Q1. What is cherry-pick? Explain the use case of it also write steps to do it.
+Answer:-
+Cherry-picking in git means choosing a commit from one branch and applying it to another branch.
+Suppose a developer fails to recognize which branch he is currently on, and by mistake, he commits to 
+another branch instead of committing that to the main branch. Now to fix it, he has to first run git show,
+then save the commit, then check out the main branch, apply patch there and commit with the same commit 
+message. But all this can be done automatically by using just one command i.e. cherry-pick.
+
+Steps :-
+1.checkout to the branch from where you want to apply commit 
+2.check the log and copy the commit id 
+git log -oneline
+3.then checkout to the branch where you want to add the add the commit 
+4.git cherry-pick commitid 
+5. git add .
+6. git commit -m "cherry pick message"
+
+
