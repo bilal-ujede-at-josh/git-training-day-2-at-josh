@@ -3,3 +3,9 @@ To cherry-pick a commit, you can use the git cherry-pick command followed by the
 
 
 git cherry-pick hashcode
+
+
+
+This will apply the changes introduced in the commit with the hash hashcode to the current branch.
+
+It's important to note that cherry-picking is a somewhat advanced feature of Git, and it can be easy to make mistakes when using it. For example, if you cherry-pick a commit that depends on other commits that have not been applied, you may end up with conflicts that are difficult to resolve.
