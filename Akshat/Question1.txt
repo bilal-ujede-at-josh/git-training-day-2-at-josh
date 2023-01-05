@@ -1,4 +1,7 @@
 Git Cherry Pick 
 
 Cherry pick allows you to apply specific commits from one branch to another branch in Git
-Cherry pick is different from merging, as it does not create a new commit
+Cherry pick is different from merging, as it does not create a new commit.
+
+To cherry pick a commit, use the git cherry-pick <commit-hash> command
+If the cherry pick conflicts with changes in the target branch, you will need to resolve the conflicts before the cherry pick can be completed.
