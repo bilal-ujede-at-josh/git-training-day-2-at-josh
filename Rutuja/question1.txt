@@ -1,0 +1,22 @@
+Cherry pick:
+      1)Cherry-picking in git means choosing a commit from one branch and applying it to another branch. 
+      2)The command for Cherry-pick is as follows:
+                  git cherry-pick<commit-hash>
+Use cases:
+      1)If you by mistake make a commit in an incorrect branch, then using cherry-pick you can apply the required changes.
+      2)Some of the time a component branch might go old and not get converged into the main branch and the request might get closed, but since git never loses those commits, it can be cherry-picked and it would be back.
+      3)At the point when a bug is found it is critical to convey a fix to end clients as fast as could be expected.
+
+Steps to do Cherry pick:
+      1)Checkout the branch you want to put the commit to.Lets say we wantour commit to master branch.
+        git checkout master
+      2)Now we need to create a branch off of master to put our cherry-picked commit to. So, the next step is to create a new branch from master.
+
+             git checkout -b cherry-pick-commit
+             ----or----
+             git branch cherry-pick-commit
+             git checkout cherry-pick-commit
+      3)Now it’s time to cherry-pick our commit. For that, you only need the SHA of the commit which you can get from the git GUI or by command line through git log command. The commit SHA is generally very long but for simplicity.
+      4)Now you have the cherry-picked commit in your cherry-pick-commit branch. Now push the changes to your repo.
+                 git push origin cherry-pick-commit
+      5)Create a PR with the base branch as master, merge it.

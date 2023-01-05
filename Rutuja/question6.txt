@@ -1,0 +1,11 @@
+ How to un stage changes from the staged area. write command for it?
+
+  1) To unstage changes from the staging area, use the git reset command followed by the file name. For example:
+         git reset <file>
+  2)This will remove the file from the staging area, but leave the file unchanged in your working directory. 
+     If you want to undo both the staging and the modification, you can use the git restore command, like this:
+         git restore --staged <file>
+  3)This will unstage the file and also revert the file to the version in the latest commit.
+     Alternatively, if you want to unstage all changes that are currently staged, you can use the git reset command with no arguments, like this:
+         git reset
+This will unstage all changes that are currently staged. The changes will still be present in your working directory and can be recommitted.
