@@ -1,0 +1,11 @@
+syntax : git push --force-with-lease
+
+About :  This Command used when your commit ID of local is diffrent than commit ID of remote 
+         Then it force push the snapshot to remote by overrdining the remote commit ID .
+
+
+syntax : git push --force
+
+About : This is used when remote repo. have one commit over your local commit ID and It will not allow you 
+        to push directly. so here we use above command and get that changes in your local repo.
+           
