@@ -16,3 +16,12 @@ Step 1:  Opening the git bash and creating a new project named sample and initia
 Step 2: Creating a ‘.txt’ file using vi command to the project let’s say an index file and add it to our sample project and make a commit and write a commit message before pressing the Enter.
  
 Step 3: Now assume we have 2 versions, so create 2 different branches by using the git branch command and move to a branch.
+
+Step 4: Now suppose you want to work on some new feature, so creating and adding a new feature file lets say feature.txt using vi and add command respectively as shown below. Then commit your changes with a commit message.
+ 
+Step 5: Now suppose we found a bug in our feature and we came to know that this same bug is also present in our 1 branch. 
+
+        And now we are trying to fix some bug or issue as shown below by adding a fix.txt file let’s suppose and add it to the current branch i.e. 2 and committing the required changes.
+ 
+ 
+Step 6: Now, we have fixed the bug in branch 2, but we also need to add this fix to our branch 1 also, but we don’t want to merge this branch 2 into our branch 1, because the work might still be going on the feature.
