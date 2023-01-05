@@ -1,0 +1,19 @@
+Q2. How to set multiple remote repositories for the same project? Explain the use case. You should have a 
+working demo of it.
+
+A developer may need to use multiple Git repositories where the codebase is too big and hence cannot be 
+maintained from one single repository. That’s why it is necessary to use multiple Git repositories.
+Another big benefit that comes with using multiple repositories is that it can make teamwork efficient 
+without the need to depend on each other. This means that they can work independently and work faster than
+ever.
+
+When you have one single repository, it is called “origin” by default. If we have two or more remote 
+repositories then we should name each of them using unique(!) names.
+
+#Syntax to add a git remote
+git remote add REMOTE-ID REMOTE-URL
+
+# Add remote 1: GitHub.
+git remote add origin git@github.com:jigarius/toggl2redmine.git
+# Add remote 2: BitBucket.
+git remote add upstream git@bitbucket.org:jigarius/toggl2redmine.git
