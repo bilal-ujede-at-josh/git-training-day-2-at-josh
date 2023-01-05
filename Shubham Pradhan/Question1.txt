@@ -1,0 +1,18 @@
+Given one or more existing commits, apply the change each one introduces, 
+recording a new commit for each. This requires your working tree to be clean 
+(no modifications from the HEAD commit).
+
+Various use cases of cherry-pick are as follows :-
+
+1) If you by mistake make a commit in an incorrect branch, then using cherry-pick you can apply the required changes.
+2) Suppose when the same data structure is to be used by both the frontend and backend of a project. Then a developer can use cherry-pick to pick the commit and use it to his part of the project.
+3) At the point when a bug is found it is critical to convey a fix to end clients as fast as could be expected.
+4) Some of the time a component branch might go old and not get converged into the main branch and the request might get closed, but since git never loses those commits, it can be cherry-picked and it would be back.
+  
+Steps to do it are :-
+ 
+Step 1:  Opening the git bash and creating a new project named sample and initializing the repo using the git init command.
+ 
+Step 2: Creating a ‘.txt’ file using vi command to the project let’s say an index file and add it to our sample project and make a commit and write a commit message before pressing the Enter.
+ 
+Step 3: Now assume we have 2 versions, so create 2 different branches by using the git branch command and move to a branch.
