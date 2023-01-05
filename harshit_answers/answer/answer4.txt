@@ -1,0 +1,2 @@
+git reset --hard HEAD~1 
+This will discard the commit head is pointing to move HEAD to the commit before HEAD. 

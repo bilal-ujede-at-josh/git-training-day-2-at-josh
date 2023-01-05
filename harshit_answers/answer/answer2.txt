@@ -1,0 +1,4 @@
+To set multiple repositeries for the same project the following command can be used git remote add <name of remote repository> <url of remote repo>
+Using multiple repositories is the only way to work efficiently. 
+This enables each team to work independently, and do their work faster. 
+You can also make sure that developers only have access to the repositories they need access to (thus making Git more secure.)

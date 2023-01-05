@@ -1,0 +1,3 @@
+To unstage all files, use the “git reset” command without specifying any files or paths.
+To remove a single file from the staging area, use git reset <file>
+To remove a whole directory (folder) from the staging area, use git reset HEAD -- <directoryName>

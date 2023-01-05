@@ -1,0 +1,12 @@
+Answer 1
+ 
+cherry-pick
+
+It helps to bring a specific commit from one branch to another . It enables arbitrary Git commits to be picked by reference and appended to the current working HEAD .
+It is helpful in case a commit is accidently made to the wrong branch then with help of cherry-pick the commit can be switched to the correct branch.
+It is also helpful in team collaboration and undoing changes and restoring lost commits.
+
+Steps
+first we find the commit id for the commit we want to change from git log. 
+next we checkout to the branch where we want to change the commit to.
+then by running $ git cherry-pick commit_it we can achieve the desired result.

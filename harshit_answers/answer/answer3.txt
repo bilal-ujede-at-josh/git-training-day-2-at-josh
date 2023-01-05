@@ -1,0 +1,10 @@
+Steps to merge multiple commits 
+1. Running git rebase in interactive mode
+      git rebase -i HEAD~4 
+   here number 4 denotes the total no of commit we want to see in rebase.
+2. Typing "squash"
+       we will replace pick with squash for commits we want to merge and save the file.
+         pick c1
+         pick c2
+         squash c3
+         pick c4
