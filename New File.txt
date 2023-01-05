@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-Just added in my branch.
-=======
 Just added in my branch.
 Added this line in Second branch.
->>>>>>> kislay-kashyap-day-02-training
