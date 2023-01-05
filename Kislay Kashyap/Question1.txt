@@ -1,0 +1,5 @@
+In Git, cherry-picking refers to the act of selecting a commit from a branch and applying it to another branch. This can be useful when you want to apply a specific change that was made in one branch to another branch, without merging the entire branch.
+To cherry-pick a commit, you can use the git cherry-pick command followed by the commit hash. For example:
+
+
+git cherry-pick hashcode
