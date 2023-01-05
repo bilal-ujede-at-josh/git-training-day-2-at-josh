@@ -1,0 +1,14 @@
+A new remote repository can be added by the following command
+
+$ git remote add <remote-name> <remote-url>
+
+To list connected remote repositories
+
+$ git remote
+$ git remote -v  # For verbose information
+
+Use Case:
+
+Multiple remote repositories are usefull to push and pull project source code in different deployment environments.
+We can set up one remote for each environment (staging, testing, production).
+

@@ -1,0 +1,4 @@
+Git restore is use to restore staged changes.
+
+$ git restore --staged filename
+

@@ -1,0 +1,10 @@
+Interactive rebasing can be use to combine multiple commits into one commit.
+We can use "pick" option to pick the commit as it is and "squash" option to combine the commit with its previous commit.
+
+Sample interactive rebase editor
+
+pick      C1
+pick      C2
+squash    C3
+pick      C4
+

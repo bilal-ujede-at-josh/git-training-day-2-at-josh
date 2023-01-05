@@ -1,0 +1,50 @@
+Git push
+
+--force
+  This option replaces remote version of the branch with our local version of branch.
+  Hence, overwriting possible changes made by co-workers.
+
+--force-with-lease
+  This option checks if there are commits based on the branch we want to force push.
+  If a co-worker based their work on the branch, force push will fail.
+  Hence, avoiding accidental overwriting of 
+
+
+Case 1:
+  --force-with-lease will fail in this case.
+  --foce can be used if commits E and F are not useful.
+
+
+(remote version of main branch)
+D F
+| |
+C E
+| /
+B
+|
+A
+
+
+(local version of main branch)
+G
+|
+A
+
+Case 2:
+  --force-with-lease will successfully force push in this case.
+
+(remote version of main branch)
+D 
+|
+C
+|
+B
+|
+A
+
+
+(local version of main branch)
+G
+|
+A
+
