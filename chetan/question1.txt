@@ -1,0 +1,27 @@
+Git cherry-pick is a git command that takes commit (or commits) from one branch and applies it's changes on another branch.
+
+       E -> F (feature)
+      /
+A -> B -> C   (HEAD -> main)
+          
+$ git checkout main
+$ git cherry-pick commit-E-hash
+
+       E -> F (feature)
+      /
+A -> B -> C -> D   (HEAD -> main)
+
+Changes in commit E are applied on the head of main branch, New commit D is formed (with applied changes from commit E).
+
+Use Case:
+
+Scenario: 
+  Let us assume commit E was a bug fix and this bug fix is required in main branch without actually merging feature branch completely.
+
+Solution using cherry-pick: 
+  1. Checkout to main branch
+  2. Cherry pick commit E from feature branch.
+
+  This will apply bug fix changes from commit E over main branch.
+  Feature branch will still be unmerged.
+

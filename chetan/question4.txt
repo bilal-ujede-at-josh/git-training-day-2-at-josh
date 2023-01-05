@@ -1,0 +1,6 @@
+Git reset command can be use to delete commits permanently.
+
+$ git reset --hard <commit-hash>
+
+The above command will delete all commits from head upto the commit specified by commit-hash
+
