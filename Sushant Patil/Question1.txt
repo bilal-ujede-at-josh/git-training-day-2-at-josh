@@ -1,0 +1,8 @@
+syntax : -  1. git cherry-pick commitID
+            2. git cherry-pick commitID -n
+
+Cherry-pick : It is a command used to get the snapshot of specific 
+              commit in another branch.There are two types of commands 
+              as mentioned above .First one commit the changes in branch you 
+              are present and second one made the changes but does not commit it.
+ 
