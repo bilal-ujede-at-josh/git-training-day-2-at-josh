@@ -1,2 +1,3 @@
 console.log("Training Day 2");
+consolelog("Added new line on branch b4");
 
