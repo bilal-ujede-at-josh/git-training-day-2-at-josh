@@ -1,1 +1,0 @@
-print('This is the feature branch derived from main branch.')
