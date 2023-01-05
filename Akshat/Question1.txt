@@ -1,0 +1,4 @@
+Git Cherry Pick 
+
+Cherry pick allows you to apply specific commits from one branch to another branch in Git
+Cherry pick is different from merging, as it does not create a new commit

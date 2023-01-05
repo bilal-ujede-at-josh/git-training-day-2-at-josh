@@ -1,4 +1,0 @@
-First commit c1
-Second commit c2
-Third commit c3
-Fourth commit c4
