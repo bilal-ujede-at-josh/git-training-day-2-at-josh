@@ -1,0 +1,3 @@
+The --force option for git push allows you to override this rule: the commit history on the remote will be forcefully overwritten with your own local history.
+
+This is a rather dangerous process, because it's very easy to overwrite (and thereby lose) commits from your colleagues. Also, even if no one else has pushed anything to the remote repository in the meantime, your colleagues might still have based their new work on the old commit history. Your "force push" changes this history and means theirs is not in line with the new one anymore.

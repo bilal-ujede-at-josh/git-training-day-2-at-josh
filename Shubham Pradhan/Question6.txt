@@ -1,0 +1,25 @@
+To unstage changes from the staged area, you can use the git reset command. This command removes files from the staging area, but it does not modify the file itself.
+
+To unstage a specific file, you can use the command:
+To unstage changes from the staged area, you can use the git reset command. This command removes files from the staging area, but it does not modify the file itself.
+
+To unstage a specific file, you can use the command:
+
+git reset <file>
+To unstage all files, you can use the command:
+
+git reset
+Keep in mind that using git reset will destroy any changes that have been staged. If you want to keep the changes but just remove them from the staging area, you can use the git reset HEAD command instead. This will unstage the changes, but it will leave the changes intact in your working directory so you can work on them further.
+
+For more information, you can refer to the git reset documentation:
+
+git reset --help
+git reset <file>
+To unstage all files, you can use the command:
+
+git reset
+Keep in mind that using git reset will destroy any changes that have been staged. If you want to keep the changes but just remove them from the staging area, you can use the git reset HEAD command instead. This will unstage the changes, but it will leave the changes intact in your working directory so you can work on them further.
+
+For more information, you can refer to the git reset documentation:
+
+git reset --help
