@@ -21,5 +21,5 @@ Save and close the editor. Git will apply the rebase and combine the commits.
 It's important to note that this operation can be somewhat risky, as it involves modifying the commit history of the branch. If you have already pushed the branch to a remote repository, other people may have based their work on the original commit history, and changing it could cause conflicts.
 
 
-
+It's generally a good idea to use this feature with caution, and only when you are sure that it won't cause problems for other people working on the project.
 
