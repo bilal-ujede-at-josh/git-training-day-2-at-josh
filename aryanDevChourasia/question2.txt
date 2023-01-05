@@ -1,0 +1,7 @@
+Q2. How to set multiple remote repositories for the same project? Explain the use case. you should have a working demo of it.
+
+Copy the HTTPS url to refer to repository using remote.
+
+To add remote use command:
+git remote add <name> <url of repository>
+

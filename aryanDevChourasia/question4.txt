@@ -1,0 +1,18 @@
+Q4. How to delete one commit or multiple commits permanently Write command for it. 
+
+Deleting the latest commits:
+The git reset command is used for deleting the latest commits in Git.
+
+Deleting the most recent commit:
+-To delete the most recent commit, run the command below
+  git reset --hard HEAD~1
+
+>HEAD~1 means one commit prior to the HEAD.
+
+Deleting multiple latest commits
+-To delete the N-th latest commits, you should use HEAD~N as the argument of git reset.
+  git reset --hard HEAD~N
+
+-We can also select the appropriate commit by its hash instead of HEAD~N.
+  git reset --hard <sha1-commit-hash>
+

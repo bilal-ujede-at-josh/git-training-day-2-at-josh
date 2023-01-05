@@ -1,0 +1,19 @@
+Q5. Difference between --force push and --force-with-lease, You have to show the use of both, 
+also you have to show in what scenario --force-with-lease is used?
+
+Git normally only allow us to push our changes if we have previously updated our local branch
+with the latest commits from its remote counterpart. Only when we are up-to-date will we be able to 
+push our own new commits to the remote.
+The --force option for git push allows us to override this rule: the commit history on the remote will 
+be forcefully overwritten with our own local history.
+Git push function with --force implies that your local commits become the remote latest commits. 
+The downside of this approach is that you will not have records or work from other collaborators
+
+
+An Safer way to push combined commits:
+
+git push --force-with-lease origin HEAD
+
+--force-with-lease is considered a safer option that will not overwrite the work done on the remote 
+branch in case more commits were attached to it (for instance, by another developer). Moreover, it 
+helps you to avoid overwriting another developer's work by force pushing.

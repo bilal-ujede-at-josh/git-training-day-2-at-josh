@@ -1,0 +1,5 @@
+Q6. How to un stage changes from the staged area. write command for it.
+
+In order to unstage all files and directories, execute “git reset” and 
+they will be removed from the staging area back to our working directory.
+
