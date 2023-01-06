@@ -1,0 +1,10 @@
+Syntax : git rebase -i HEAD~n
+where n=Number of commits to merge.
+
+About : It merge number of commits to one commits .
+       By wrighting the above syntax we will get all the commits then select 
+       on which branch you want to merge. and exit by a "esc+:" and wright wd
+       It  will exit from the tag.
+
+Useful Commands :- git rebase --abort 
+                   git rebase --continue

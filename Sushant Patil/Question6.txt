@@ -1,0 +1,3 @@
+syntax : git reset filename
+
+About : It will revert the data from the stagged area.

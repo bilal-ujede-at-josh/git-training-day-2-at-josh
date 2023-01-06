@@ -1,0 +1,3 @@
+Syntax : reset HEAD~Number of recent commits
+
+About :  It revert all the N number commits from the HEAD .
