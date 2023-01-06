@@ -1,0 +1,18 @@
+Q1. What is cherry-pick? Explain the use case of it also write steps to do it.
+
+
+Git cherry-pick command is used to pick a particular commit and appended to current working branch....
+However, it isn't recommended over merging.
+
+
+
+Use cases are :-
+1. We want a piece of code directly from a particular known commit, it can be cherrypicked then.
+2. To fix a bug in case of quick solution, a SOLUTION COMMIT can easily be cherrypicked.
+3. If a branch gets old or pull request isn't responded and expires so one can directly cherrypick from the available commits in logs.
+
+
+Implementation:
+
+$git checkout master
+$git cherry-pick <commit-hash>

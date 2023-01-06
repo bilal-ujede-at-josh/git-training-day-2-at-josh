@@ -1,0 +1,13 @@
+Q2. How to set multiple remote repositories for the same project? Explain the use case. you should have a working demo of it.
+
+
+We can set up remote repositories directly from the github->new repository...
+
+We can either manually edit the configuration file for changing the name of origin and include other remote repository's name
+
+OR 
+
+instead of doing it manually we can use these commands: 
+
+git remote set-url origin --push --add <a remote>
+git remote set-url origin --push --add <another remote>

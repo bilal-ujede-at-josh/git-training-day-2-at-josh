@@ -1,0 +1,19 @@
+Q6. How to un stage changes from the staged area. write command for it.
+It is possible using two commands :
+
+a) RESTORE -
+
+The git restore command is used when you already added a file to the Staging Area and want to unstage it:
+$git restore --staged myFile.py
+
+
+To discard the local changes in this file along with , you can simply remove the --staged option:
+$ git restore myFile.py  (NOTE - $git reset myFile.py does the same thing)
+This will discard any local modifications in this file and reset it to its last committed state.
+
+b) RESET -
+
+For unstaging all files at once
+$git reset
+The staging area will be emptied (but your local changes themselves are left untouched).
+
