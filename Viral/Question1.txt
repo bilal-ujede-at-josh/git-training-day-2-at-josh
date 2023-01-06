@@ -1,0 +1,23 @@
+Ques 1: What is cherry-pick? Explain the use case of it also write steps to do it.
+
+cherry pick is used for choosing the commit form one branch and applying it to another branch.
+it is used for when we do not want to merge the whole branch and you want some of the commits.
+
+Steps to do cherry picking :
+
+1. first create a file test1.txt in main branch. Add it to the git and commit it.
+   -->vi test1.txt    //write some text and save it and quit.
+   -->git add test1.txt
+   -->git commit -m "cherry pick"
+2. Now checkout to the new branch test. create a file test.txt, add it, and commit it.
+   -->git checkout test
+   -->git add test.txt
+   -->git commit -m "cherry pick"
+3. Now if we do some commit in main branch and we want this change in test branch and we don't want 
+   to merge whole branch to the test so we get the commit hash value from the main branch.
+   -->git checkout main
+   -->git log --oneline
+   get the commit hash value
+4. now checkout to the test branch and now cherry-pic chnages to the test branch.
+   -->git checkout test
+   -->git cherry-pick <commit-hash> 

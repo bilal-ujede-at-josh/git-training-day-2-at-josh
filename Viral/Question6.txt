@@ -1,0 +1,10 @@
+How to un stage changes from the staged area. write command for it.
+
+--> To remove all changes from the staging index.
+    $$ git reset
+
+ This will remove all changes from the staging area. It will not delete
+ any files – the git add command can be used to re-add changes back into the staging index
+--> To unstage a single file or directory
+
+$$ git reset location/of/file.ext

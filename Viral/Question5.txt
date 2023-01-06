@@ -1,0 +1,10 @@
+Difference between --force push and --force-with-lease, You have to show the use of both, 
+also you have to show in what scenario --force-with-lease is used?
+
+--> --force-with-lease: 
+	Using this flag, git checks if the remote version of the branch is the same as the one 
+	you rebase, i.e. did someone push new commits when we were rebasing. The push is then 
+	rejected if the remotes branch is changed.
+--> --force : 
+	One can use --force to ignore the newly added commits on the remote branch and overwrite
+	them with the local ones.
