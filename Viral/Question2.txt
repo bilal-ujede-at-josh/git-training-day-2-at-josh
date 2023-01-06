@@ -1,0 +1,14 @@
+Q2. How to set multiple remote repositories for the same project? Explain the use case. 
+you should have a working demo of it.
+
+-->To add a new remote, use the git remote add command on the terminal,
+in the directory your repository is stored at.
+
+$$ A unique remote name, for example, “my_awesome_new_remote_repo”
+
+$$ A remote URL, which you can find on the Source sub-tab of your Git repo
+
+$$ git remote add remote_repo <git_remote-link>
+
+To push your changes into your remote repo execute the git push <remote> <branch> command:
+$$ git push <your_remote_name>
